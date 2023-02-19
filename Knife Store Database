@@ -1,0 +1,28 @@
+-- create database for knife store
+
+CREATE TABLE knives (id integer primary key, name text, manufacturer text, mats text, length integer,price integer);
+
+INSERT INTO knives
+
+VALUES
+(1, '940', 'Benchmade', 'S90V', 3, 215),
+(2, 'Interstellar', 'Kershaw', '8cr13mov', 2.7, 45),
+(3, 'Begleiter', 'Kizer', 'BDN1', 3.5, 50),
+(4, 'ACE', 'GiantMouse', 'M390', 2.9, 99),
+(5, '0460CF', 'Zero Tollerence', 'S95VN', 3.25, 150),
+(6, 'Mini Kalashnikov', 'Boker', 'AUS8', 2.5, 38),
+(7, 'Mini Onslaught', 'Benchmade', '154CM', 3.5, 153),
+(8, 'Contego', 'Benchmade', 'M4', 4, 180),
+(9, 'Drifter', 'CRKT', '6450S', 2.8, 21),
+(10, 'Aegis', 'SOG', 'AUS8', 3, 45),
+(11, '790 Subrosa', 'Benchmade', 'S30V', 3.75, 160),
+(12, 'Fingerling', 'Piranha', '154CM', 2.5, 99),
+(13, 'Tactical', 'Piranha', '154CM', 3.2, 112),
+(14, 'Delica', 'Spyderco', 'VG10', 2.9, 66),
+(15, 'UTX70', 'Microtech', 'M390', 2.4, 205);
+
+-- display data sorted by price
+
+SELECT * 
+FROM knives
+ORDER BY price DESC
